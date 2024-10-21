@@ -10,7 +10,7 @@ def load_wallets(filename):
     return wallets
 
 def load_proxies(filename):
-    """Load proxy addresses from a file."""
+    """Load proxy addresses from proxies.txt file."""
     with open(filename, 'r') as file:
         proxies = [line.strip() for line in file if line.strip()]
     return proxies
@@ -55,7 +55,7 @@ def request_tokens(wallet, proxies, max_retries=3):
 
 def main():
     wallets = load_wallets('wallet.txt')
-    proxies = load_proxies('proxy.txt')
+    proxies = load_proxies('proxies.txt')  # Using proxies.txt for proxies list
 
     for wallet in wallets:
         success = request_tokens(wallet, proxies)
