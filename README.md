@@ -42,7 +42,7 @@ This is a simple Python script designed to automate the process of claiming toke
    ```
 
 5. **Create the required text files**:
-   - **proxies.txt**: Add your proxy addresses (one per line).
+   - **proxies.txt**: Add your proxy addresses(Format : http://user:pass@ip:port) (one per line).
    - **wallet.txt**: Add your wallet addresses (one per line).
 
 ### Termux (Android)
